@@ -6,7 +6,7 @@
 #DUMMY_OBJ = AIDummy.o-CYGWIN
 
 # Add here any extra .o player files you want to link to the executable
-EXTRA_OBJS = 
+EXTRA_OBJS = AIJoan.o
 
 # Config
 OPTIMIZE = 2 # Optimization level (0 to 3)
@@ -40,7 +40,7 @@ LDFLAGS  = -lm $(ARCHFLAGS) $(PROFILEFLAGS) $(DEBUGFLAGS) -O$(strip $(OPTIMIZE))
 
 # Rules
 
-all: Game 
+all: Game
 
 clean:
 	rm -rf Game SecGame *.o *.exe Makefile.deps
@@ -70,5 +70,3 @@ doxygen:
 	cp latex/refman.pdf .
 
 include Makefile.deps
-
-

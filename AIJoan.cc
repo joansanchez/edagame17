@@ -9,7 +9,7 @@ using namespace std;
  * with a name matching the format "AIyourname.cc".
  */
 #define PLAYER_NAME Joan
-//test
+
 
 struct PLAYER_NAME : public Player {
 

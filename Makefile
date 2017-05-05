@@ -6,7 +6,7 @@
 #DUMMY_OBJ = AIDummy.o-CYGWIN
 
 # Add here any extra .o player files you want to link to the executable
-EXTRA_OBJS = AIDummy.o
+EXTRA_OBJS = AIDummy.o AIJoan2.o AIDemo2.o
 
 # Config
 OPTIMIZE = 2 # Optimization level (0 to 3)

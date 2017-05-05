@@ -54,9 +54,9 @@ struct PLAYER_NAME : public Player {
     void play () {
         vector<int> ocupada (nb_bikes (), -1); //para guardar los vertices a los que van mis bicis y evitar choques
         vector<int> my_bikes = bikes(me());
-        for (int i = 0; i < (int)my_bikes.size(); ++i) {
+        for (int l = 0; l < (int)my_bikes.size(); ++l) {
 
-    			const Bike& my_bike = bike(my_bikes[i]);
+    			const Bike& my_bike = bike(my_bikes[l]);
 
     			// Do something only if this bike is alive
     			if (!my_bike.alive) {
@@ -113,7 +113,6 @@ struct PLAYER_NAME : public Player {
     			if (my_bike.bonus != None && rand()%5 > 3) {
     				movement.use_bonus = true;
     			}
-
 
     			// Command the movement
                 command(movement);
